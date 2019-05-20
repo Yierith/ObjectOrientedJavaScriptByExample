@@ -5,4 +5,16 @@ class Token {
     this.dropped = false;
   }
 
+  get htmlToken(){
+
+  }
+
+  drawHTMLToken(){
+    const token = document.createElement('div');
+    document.getElementById('game-board-underlay').appendChild(token);
+    token.setAttribute('id', this.id);
+    token.setAttribute('class', 'token');
+    token.style.background = this.owner.color;
+  }
+
 }
