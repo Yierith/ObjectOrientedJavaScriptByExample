@@ -5,10 +5,17 @@ class Token {
     this.dropped = false;
   }
 
+  /**
+  * Gets associated htmlToken.
+  * @return  {element}   Html element associated with token object.
+  */
   get htmlToken(){
 
   }
 
+  /**
+  * Draws new HTML token.
+  */
   drawHTMLToken(){
     const token = document.createElement('div');
     document.getElementById('game-board-underlay').appendChild(token);
