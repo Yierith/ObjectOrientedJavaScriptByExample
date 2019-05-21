@@ -24,7 +24,9 @@ class Board {
     return spaces;
   }
 
-
+  /**
+  * Draws associated SVG spaces for all game spaces.
+  */
   drawHTMLBoard(){
     for(let column of this.spaces){
       for(let space of column){
