@@ -32,8 +32,10 @@ class Game {
     if( this.ready === true ){
       if( e.key === 'ArrowLeft' ){
         // move left
+        this.activePlayer.activeToken.moveLeft();
       } else if ( e.key === 'ArrowRight' ){
         // move right
+        this.activePlayer.activeToken.moveRight(this.board.columns);
       } else if ( e.key === 'ArrowDown' ){
         // play token
       }
